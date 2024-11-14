@@ -1144,6 +1144,14 @@
                 "y": -250
               },
               {
+                "x": 1000,
+                "y": -430
+              },
+              {
+                "x": 940,
+                "y": -450
+              },
+              {
                 "x": 650,
                 "y": -430
               },
@@ -1508,6 +1516,150 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "963ade3a-efd6-440a-9a8f-e5aeb7a5e870",
+            "source": {
+              "cell": "dec51efb-bf55-4b9c-a294-0e45f4e823f6"
+            },
+            "target": {
+              "cell": "ce371517-76ef-4219-b2c8-963b80d50755"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "a38ee3bd-bc56-4fa0-8a6e-a3efbcadf71e",
+            "source": {
+              "cell": "b9e6e7cd-c62a-4a7c-b1fd-389ec3d887bf"
+            },
+            "target": {
+              "cell": "408f7a51-0e14-4fda-bb65-2cbd3067f2fa"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "9789a21c-ae25-4a5f-a71d-a1b906251a09",
+            "source": {
+              "cell": "9560a712-231a-4087-b3eb-0b157a67428f"
+            },
+            "target": {
+              "cell": "b9e6e7cd-c62a-4a7c-b1fd-389ec3d887bf"
+            }
+          },
+          {
+            "shape": "flow",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "d1b3477b-03d3-4e7f-90fc-c5ba2e0709cf",
+            "source": {
+              "cell": "9560a712-231a-4087-b3eb-0b157a67428f"
+            },
+            "target": {
+              "cell": "b23ffe9a-c312-453a-adf1-81cc56965342"
+            }
+          },
+          {
             "position": {
               "x": 410,
               "y": -174
@@ -1652,8 +1804,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "1cf6e4cb-980e-413d-a55b-077664d0cb4e",
             "zIndex": 14,
+            "id": "1cf6e4cb-980e-413d-a55b-077664d0cb4e",
             "data": {
               "type": "tm.Process",
               "name": "Management\nReport",
@@ -1698,8 +1850,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "0002e080-165a-401b-809d-8a1e1c896e03",
             "zIndex": 15,
+            "id": "0002e080-165a-401b-809d-8a1e1c896e03",
             "data": {
               "type": "tm.Text",
               "name": "Export RAW Daten",
@@ -1708,8 +1860,8 @@
           },
           {
             "position": {
-              "x": 709.5,
-              "y": -264
+              "x": 782.5,
+              "y": -298
             },
             "size": {
               "width": 120,
@@ -1727,8 +1879,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "9560a712-231a-4087-b3eb-0b157a67428f",
             "zIndex": 16,
+            "id": "9560a712-231a-4087-b3eb-0b157a67428f",
             "data": {
               "type": "tm.Process",
               "name": "SIEM-System",
@@ -1778,8 +1930,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "3214c653-3481-4a5d-a1bf-da30c4532cbc",
             "zIndex": 17,
+            "id": "3214c653-3481-4a5d-a1bf-da30c4532cbc",
             "data": {
               "type": "tm.Process",
               "name": "Allsecure Mobile\nPhone OTT Service",
@@ -1810,8 +1962,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "3855aba8-acbf-4d22-ad78-9d434c57bc90",
             "zIndex": 18,
+            "id": "3855aba8-acbf-4d22-ad78-9d434c57bc90",
             "data": {
               "type": "tm.Text",
               "name": "Antwort",
@@ -1834,8 +1986,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "97c76a60-411e-4c79-b4a6-e4b868e7e866",
             "zIndex": 19,
+            "id": "97c76a60-411e-4c79-b4a6-e4b868e7e866",
             "data": {
               "type": "tm.Text",
               "name": "2. Weiterleitung\nTelefonnummer",
@@ -1858,8 +2010,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "4cb60299-50ed-461f-93d8-e5bad44f161f",
             "zIndex": 20,
+            "id": "4cb60299-50ed-461f-93d8-e5bad44f161f",
             "data": {
               "type": "tm.Text",
               "name": "Log + Monitoring Data",
@@ -1868,8 +2020,8 @@
           },
           {
             "position": {
-              "x": 670,
-              "y": -160
+              "x": 691,
+              "y": -174
             },
             "size": {
               "width": 112.5,
@@ -1882,8 +2034,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "d2241309-fd86-4fb2-be49-582905c1218f",
             "zIndex": 21,
+            "id": "d2241309-fd86-4fb2-be49-582905c1218f",
             "data": {
               "type": "tm.Text",
               "name": "Log + Monitoring Data",
@@ -1911,8 +2063,8 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "408f7a51-0e14-4fda-bb65-2cbd3067f2fa",
             "zIndex": 22,
+            "id": "408f7a51-0e14-4fda-bb65-2cbd3067f2fa",
             "data": {
               "type": "tm.Actor",
               "name": "Management",
@@ -1954,8 +2106,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "fe6ac37b-9699-4f94-9278-78fba8001eb1",
             "zIndex": 23,
+            "id": "fe6ac37b-9699-4f94-9278-78fba8001eb1",
             "data": {
               "type": "tm.Text",
               "name": "Reports",
@@ -1978,12 +2130,179 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "209d2025-2324-44f1-911a-0beae0ca7be1",
             "zIndex": 24,
+            "id": "209d2025-2324-44f1-911a-0beae0ca7be1",
             "data": {
               "type": "tm.Text",
               "name": "Reports",
               "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 32,
+              "y": 177
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "SD-Karte"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "ce371517-76ef-4219-b2c8-963b80d50755",
+            "zIndex": 25,
+            "data": {
+              "type": "tm.Store",
+              "name": "SD-Karte",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 875,
+              "y": -423
+            },
+            "size": {
+              "width": 90,
+              "height": 80
+            },
+            "attrs": {
+              "text": {
+                "text": "Mail-Server"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "b9e6e7cd-c62a-4a7c-b1fd-389ec3d887bf",
+            "zIndex": 26,
+            "data": {
+              "type": "tm.Process",
+              "name": "Mail-Server",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 762.5,
+              "y": -418
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Reports"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "ff093cfa-91e6-4346-929d-6c74b87883f7",
+            "zIndex": 27,
+            "data": {
+              "type": "tm.Text",
+              "name": "Reports",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 825.75,
+              "y": -343
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Reports"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "5e56fb36-6b56-4ab8-979e-c3f4cd49c4b7",
+            "zIndex": 28,
+            "data": {
+              "type": "tm.Text",
+              "name": "Reports",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 663,
+              "y": -268
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "SIEM-DB"
+              },
+              "topLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "id": "b23ffe9a-c312-453a-adf1-81cc56965342",
+            "zIndex": 29,
+            "data": {
+              "type": "tm.Store",
+              "name": "SIEM-DB",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": []
             }
           }
         ],
