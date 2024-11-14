@@ -118,8 +118,8 @@
                 "text": "2-Faktor-Authe\nntifizierungsdi\nenst"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -134,8 +134,22 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "threats": [],
-              "hasOpenThreats": false,
+              "threats": [
+                {
+                  "id": "113e551d-2cc7-43d0-8a9c-51792a70a520",
+                  "title": "Detaillierte Fehlermeldungen an Benutzer",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Wenn ein Fehler im System passiert, werden diese zu genau beschrieben. Dadurch enthält der Angreifer viel Wissen über das System oder über die Daten.\n\nCWE-209: The product generates an error message that includes sensitive information about its environment, users, or associated data.",
+                  "mitigation": "Fehlermeldungen eingrenzen bzw. einfach halten.\nInterne Codes verwenden, die nicht öffentlich sind.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 128,
+                  "score": ""
+                }
+              ],
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "protocol": "",
               "isEncrypted": false,
@@ -1923,8 +1937,8 @@
                 "text": "Allsecure Mobile\nPhone OTT Service"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1938,12 +1952,26 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "26090eca-8614-4d40-b435-3f32b2a9352c",
+                  "title": "DDoS",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Das System ist nicht redundant und könnte bei vielen Anfragen überlastet sein. Der Prozess (die Aufgaben) sind im Vergleich komplex und viel.\n\nCAPEC-489: An adversary may execute a flooding attack using the SSL protocol with the intent to deny legitimate users access to a service by consuming all the available resources on the server side.\n\nT1449: Adversaries may perform Endpoint Denial of Service (DoS) attacks to degrade or block the availability of services to users.",
+                  "mitigation": "Redundante Server einrichten. Mit stärkerer Hardware ausstatten.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 127,
+                  "score": ""
+                }
+              ]
             }
           },
           {
@@ -2315,7 +2343,7 @@
     ],
     "reviewer": "Georg Neugebauer",
     "diagramTop": 10,
-    "threatTop": 126
+    "threatTop": 128
   },
   "version": "2.1.1"
 }
