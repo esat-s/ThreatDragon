@@ -142,11 +142,11 @@
                   "severity": "Medium",
                   "type": "Information disclosure",
                   "description": "Wenn ein Fehler im System passiert, werden diese zu genau beschrieben. Dadurch enthält der Angreifer viel Wissen über das System oder über die Daten.\n\nCWE-209: The product generates an error message that includes sensitive information about its environment, users, or associated data.",
-                  "mitigation": "Fehlermeldungen eingrenzen bzw. einfach halten.\nInterne Codes verwenden, die nicht öffentlich sind.",
+                  "mitigation": "Fehlermeldungen eingrenzen bzw. einfach halten.\nInterne Codes verwenden, die nicht öffentlich sind.\n\nD3FEND-Matrix: Dead Code Elimination D3-DCE\n\nDamage: 5\nReproducibility: 10\nExploitability: 5\nAffected users: 5\nDREA: 25",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 128,
-                  "score": ""
+                  "score": "25"
                 }
               ],
               "hasOpenThreats": true,
@@ -1965,11 +1965,11 @@
                   "severity": "Medium",
                   "type": "Denial of service",
                   "description": "Das System ist nicht redundant und könnte bei vielen Anfragen überlastet sein. Der Prozess (die Aufgaben) sind im Vergleich komplex und viel.\n\nCAPEC-489: An adversary may execute a flooding attack using the SSL protocol with the intent to deny legitimate users access to a service by consuming all the available resources on the server side.\n\nT1449: Adversaries may perform Endpoint Denial of Service (DoS) attacks to degrade or block the availability of services to users.",
-                  "mitigation": "Redundante Server einrichten. Mit stärkerer Hardware ausstatten.",
+                  "mitigation": "Redundante Server einrichten. Mit stärkerer Hardware ausstatten.\n\nD3FEND-Matrix: Network Traffic Filtering D3-NTF\n\nDamage: 10\nReproducibility: 10\nExploitability: 5\nAffected users: 10\nDREA: 35",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 127,
-                  "score": ""
+                  "score": "35"
                 }
               ]
             }
