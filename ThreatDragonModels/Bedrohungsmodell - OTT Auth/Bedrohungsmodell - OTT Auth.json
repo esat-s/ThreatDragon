@@ -1914,11 +1914,11 @@
                   "severity": "Medium",
                   "type": "Tampering",
                   "description": "Ein Angreifer könnte dafür sorgen, dass falsche Log Dateien generiert werden.\n\nT1565: dversaries may insert, delete, or manipulate data in order to influence external outcomes or hide activity, thus threatening the integrity of the data. By manipulating data, adversaries may attempt to affect a business process, organizational understanding, or decision making.\n\nCAPEC-268: The attacker injects, manipulates, deletes, or forges malicious log entries into the log file, in an attempt to mislead an audit of the log file or cover tracks of an attack. Due to either insufficient access controls of the log files or the logging mechanism, the attacker is able to perform such actions.",
-                  "mitigation": "Validierung der Input Daten, bevor Logs generiert werden",
+                  "mitigation": "Validierung der Input Daten, bevor Logs generiert werden\n\nD3FEND-Matrix: File Content Analysis D3-FCOA\n\nDamage: 8\nReproducibility: 2\nExploitability: 2\nAffected users: 1\nDREA: 13",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 121,
-                  "score": ""
+                  "score": "13"
                 }
               ]
             }
@@ -2109,11 +2109,11 @@
                   "severity": "Medium",
                   "type": "Spoofing",
                   "description": "Das Management bekommt von 2 Quellen sensitive Informationen über die Systeme. Dort kann ein Angreifer mittels Phishing versuchen an diese Informationen zu gelangen.\n\nCAPEC 98: Phishing is a social engineering technique where an attacker masquerades as a legitimate entity with which the victim might do business in order to prompt the user to reveal some confidential information (very frequently authentication credentials) that can later be used by an attacker.\n\nMitre T1598: Adversaries may send phishing messages to elicit sensitive information that can be used during targeting. Phishing for information is an attempt to trick targets into divulging information, frequently credentials or other actionable information.",
-                  "mitigation": "Schulung, Zero Trust, least privilege",
+                  "mitigation": "Schulung, Zero Trust, least privilege\n\nDamage: 8\nReproducibility: 2\nExploitability: 7\nAffected users: 5\nDREA: 22",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 116,
-                  "score": ""
+                  "score": "22"
                 }
               ]
             }
