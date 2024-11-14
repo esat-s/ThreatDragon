@@ -1839,11 +1839,11 @@
                   "severity": "Medium",
                   "type": "Elevation of privilege",
                   "description": "Angreifer kann dafür sorgen, dass die RAW Dateien ungewollte Inhalte enthalten.\n\nT1659: Adversaries may gain access and continuously communicate with victims by injecting malicious content into systems through online network traffic.\n\nCAPEC-636: Files on various operating systems can have a complex format which allows for the storage of other data, in addition to its contents. Often this is metadata about the file, such as a cached thumbnail for an image file.",
-                  "mitigation": "Validierung der erzeugten Dateien",
+                  "mitigation": "Validierung der erzeugten Dateien\n\nD3FEND-Matrix: File Content Analysis D3-FCOA\n\nDamage: 8\nReproducibility: 2\nExploitability: 2\nAffected users: 1\nDREA: 13",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 124,
-                  "score": ""
+                  "score": "13"
                 }
               ]
             }
