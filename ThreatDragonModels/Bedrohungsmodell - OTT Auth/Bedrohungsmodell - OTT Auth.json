@@ -2248,7 +2248,7 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Repudiation",
-                  "description": "Ein Benutzer könnte behaupten, dass er eine wichtige E-Mail nicht erhalten hat, obwohl der Mail-Server die Nachricht zugestellt hat. Es gibt keine Zustellprotokolle oder Bestätigungen.",
+                  "description": "Ein Benutzer könnte behaupten, dass er eine wichtige E-Mail nicht erhalten hat, obwohl der Mail-Server die Nachricht zugestellt hat. Es gibt keine Zustellprotokolle oder Bestätigungen.\n\nCAPEC-571: An adversary prevents host-generated logs being delivered to a central location in an attempt to hide indicators of compromise.\n\nT1565: dversaries may insert, delete, or manipulate data in order to influence external outcomes or hide activity, thus threatening the integrity of the data.",
                   "mitigation": "Zustellung loggen.\nzusätzliche addons für zustellbestätigungen verwenden\n\nDamage: 1\nReproducibility: 4\nExploitability: 1\nAffected users: 1\nDREA: 7",
                   "modelType": "STRIDE",
                   "new": false,
