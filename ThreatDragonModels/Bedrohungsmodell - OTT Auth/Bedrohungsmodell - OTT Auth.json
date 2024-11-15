@@ -118,8 +118,8 @@
                 "text": "2-Faktor-Authe\nntifizierungsdi\nenst"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -138,18 +138,18 @@
                 {
                   "id": "113e551d-2cc7-43d0-8a9c-51792a70a520",
                   "title": "Detaillierte Fehlermeldungen an Benutzer",
-                  "status": "Open",
-                  "severity": "Medium",
+                  "status": "Mitigated",
+                  "severity": "Low",
                   "type": "Information disclosure",
-                  "description": "Wenn ein Fehler im System passiert, werden diese zu genau beschrieben. Dadurch enthält der Angreifer viel Wissen über das System oder über die Daten.\n\nCWE-209: The product generates an error message that includes sensitive information about its environment, users, or associated data.",
-                  "mitigation": "Fehlermeldungen eingrenzen bzw. einfach halten.\nInterne Codes verwenden, die nicht öffentlich sind.\n\nD3FEND-Matrix: Dead Code Elimination D3-DCE\n\nDamage: 5\nReproducibility: 10\nExploitability: 5\nAffected users: 5\nDREA: 25",
+                  "description": "Wenn ein Fehler im System passiert, werden diese zu genau beschrieben. Dadurch enthält der Angreifer viel Wissen über das System oder über die Daten.\n\nCWE-209: The product generates an error message that includes sensitive information about its environment, users, or associated data.\n\nDamage: 5\nReproducibility: 10\nExploitability: 5\nAffected users: 5\nDREA: 25",
+                  "mitigation": "Fehlermeldungen eingrenzen bzw. einfach halten.\nInterne Codes verwenden, die nicht öffentlich sind.\n\nD3FEND-Matrix: Dead Code Elimination D3-DCE\n\nDamage: 3\nReproducibility: 2\nExploitability: 2\nAffected users: 2\nDREA: 9",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 128,
-                  "score": "25"
+                  "score": "9"
                 }
               ],
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "isBidirectional": false,
               "protocol": "",
               "isEncrypted": false,
@@ -541,7 +541,7 @@
                 "y": 20
               },
               {
-                "x": 710,
+                "x": 670,
                 "y": 20
               }
             ]
@@ -978,7 +978,7 @@
               "cell": "3214c653-3481-4a5d-a1bf-da30c4532cbc"
             },
             "target": {
-              "cell": "dec51efb-bf55-4b9c-a294-0e45f4e823f6"
+              "cell": "a1d5bbe6-465f-43bb-bd96-7ce687db37aa"
             },
             "vertices": [
               {
@@ -1085,8 +1085,8 @@
                 "text": "Management\nReport"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -1100,7 +1100,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -1109,15 +1109,15 @@
                 {
                   "id": "1da9808a-fad6-4d08-ab82-4e7d31aa82e7",
                   "title": "Manipulierte RAW Daten",
-                  "status": "Open",
-                  "severity": "Medium",
+                  "status": "Mitigated",
+                  "severity": "Low",
                   "type": "Elevation of privilege",
-                  "description": "Angreifer kann dafür sorgen, dass die RAW Dateien ungewollte Inhalte enthalten.\n\nT1659: Adversaries may gain access and continuously communicate with victims by injecting malicious content into systems through online network traffic.\n\nCAPEC-636: Files on various operating systems can have a complex format which allows for the storage of other data, in addition to its contents. Often this is metadata about the file, such as a cached thumbnail for an image file.",
-                  "mitigation": "Validierung der erzeugten Dateien\n\nD3FEND-Matrix: File Content Analysis D3-FCOA\nMASVS: MASVS-CODE-4: The app validates and sanitizes all untrusted inputs.\n\nDamage: 8\nReproducibility: 2\nExploitability: 2\nAffected users: 1\nDREA: 13",
+                  "description": "Angreifer kann dafür sorgen, dass die RAW Dateien ungewollte Inhalte enthalten. Dadurch kann schadhafter Code ausgeführt werden. Oder die Log-Dateien können für Verwirrung sorgen.\n\nT1659: Adversaries may gain access and continuously communicate with victims by injecting malicious content into systems through online network traffic.\n\nCAPEC-636: Files on various operating systems can have a complex format which allows for the storage of other data, in addition to its contents. Often this is metadata about the file, such as a cached thumbnail for an image file.\n\nDamage: 8\nReproducibility: 2\nExploitability: 2\nAffected users: 3\nDREA: 15",
+                  "mitigation": "Validierung der erzeugten Dateien\n\nD3FEND-Matrix: File Content Analysis D3-FCOA\nMASVS: MASVS-CODE-4: The app validates and sanitizes all untrusted inputs.\n\nDamage: 2\nReproducibility: 2\nExploitability: 2\nAffected users: 3\nDREA: 9",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 124,
-                  "score": "13"
+                  "score": "9"
                 }
               ]
             }
@@ -1160,8 +1160,8 @@
                 "text": "SIEM-System"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -1175,7 +1175,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -1184,15 +1184,15 @@
                 {
                   "id": "769bb33c-05bb-4e61-a822-4da46413f147",
                   "title": "Log Datei Manipulation",
-                  "status": "Open",
-                  "severity": "Medium",
+                  "status": "Mitigated",
+                  "severity": "Low",
                   "type": "Tampering",
-                  "description": "Ein Angreifer könnte dafür sorgen, dass falsche Log Dateien generiert werden.\n\nT1565: dversaries may insert, delete, or manipulate data in order to influence external outcomes or hide activity, thus threatening the integrity of the data. By manipulating data, adversaries may attempt to affect a business process, organizational understanding, or decision making.\n\nCAPEC-268: The attacker injects, manipulates, deletes, or forges malicious log entries into the log file, in an attempt to mislead an audit of the log file or cover tracks of an attack. Due to either insufficient access controls of the log files or the logging mechanism, the attacker is able to perform such actions.",
-                  "mitigation": "Validierung der Input Daten, bevor Logs generiert werden\n\nD3FEND-Matrix: File Content Analysis D3-FCOA\nASVS: 5.3.2 Output Encoding and Injection Prevention\n\nDamage: 8\nReproducibility: 2\nExploitability: 2\nAffected users: 1\nDREA: 13",
+                  "description": "Ein Angreifer könnte dafür sorgen, dass falsche Log Dateien generiert werden. Dadurch kann schadhafter Code ausgeführt werden. Oder die Log-Dateien können für Verwirrung sorgen.\n\nT1565: dversaries may insert, delete, or manipulate data in order to influence external outcomes or hide activity, thus threatening the integrity of the data. By manipulating data, adversaries may attempt to affect a business process, organizational understanding, or decision making.\n\nCAPEC-268: The attacker injects, manipulates, deletes, or forges malicious log entries into the log file, in an attempt to mislead an audit of the log file or cover tracks of an attack. Due to either insufficient access controls of the log files or the logging mechanism, the attacker is able to perform such actions.\n\nDamage: 8\nReproducibility: 2\nExploitability: 2\nAffected users: 3\nDREA: 16",
+                  "mitigation": "Validierung der Input Daten, bevor Logs generiert werden.\n\nD3FEND-Matrix: File Content Analysis D3-FCOA\nASVS: 5.3.2 Output Encoding and Injection Prevention\n\nDamage: 2\nReproducibility: 2\nExploitability: 2\nAffected users: 3\nDREA: 9",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 121,
-                  "score": "13"
+                  "score": "9"
                 }
               ]
             }
@@ -1211,8 +1211,8 @@
                 "text": "Allsecure Mobile\nPhone OTT Service"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -1226,7 +1226,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -1235,15 +1235,15 @@
                 {
                   "id": "26090eca-8614-4d40-b435-3f32b2a9352c",
                   "title": "DDoS",
-                  "status": "Open",
+                  "status": "Mitigated",
                   "severity": "Medium",
                   "type": "Denial of service",
-                  "description": "Das System ist nicht redundant und könnte bei vielen Anfragen überlastet sein. Der Prozess (die Aufgaben) sind im Vergleich komplex und viel.\n\nCAPEC-489: An adversary may execute a flooding attack using the SSL protocol with the intent to deny legitimate users access to a service by consuming all the available resources on the server side.\n\nT1449: Adversaries may perform Endpoint Denial of Service (DoS) attacks to degrade or block the availability of services to users.",
-                  "mitigation": "Redundante Server einrichten. Mit stärkerer Hardware ausstatten.\n\nD3FEND-Matrix: Network Traffic Filtering D3-NTF\n\nDamage: 10\nReproducibility: 10\nExploitability: 5\nAffected users: 10\nDREA: 35",
+                  "description": "Das System ist nicht redundant und könnte bei vielen Anfragen überlastet sein. Der Prozess (die Aufgaben) sind im Vergleich komplex und viel.\n\nCAPEC-489: An adversary may execute a flooding attack using the SSL protocol with the intent to deny legitimate users access to a service by consuming all the available resources on the server side.\n\nT1449: Adversaries may perform Endpoint Denial of Service (DoS) attacks to degrade or block the availability of services to users.\n\nDamage: 10\nReproducibility: 10\nExploitability: 5\nAffected users: 10\nDREA: 35",
+                  "mitigation": "Redundante Server einrichten. Mit stärkerer Hardware ausstatten.\n\nD3FEND-Matrix: Network Traffic Filtering D3-NTF\n\nDamage: 3\nReproducibility: 10\nExploitability: 5\nAffected users: 2\nDREA: 20",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 127,
-                  "score": "35"
+                  "score": "20"
                 }
               ]
             }
@@ -1358,8 +1358,8 @@
                 "text": "Management"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -1373,21 +1373,21 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": [
                 {
                   "id": "6c366022-d3d9-4d3b-ad8f-95c1eb310fc2",
                   "title": "Spoofing um an Management Informationen zu gelangen",
-                  "status": "Open",
-                  "severity": "Medium",
+                  "status": "Mitigated",
+                  "severity": "Low",
                   "type": "Spoofing",
-                  "description": "Das Management bekommt von 2 Quellen sensitive Informationen über die Systeme. Dort kann ein Angreifer mittels Phishing versuchen an diese Informationen zu gelangen.\n\nCAPEC 98: Phishing is a social engineering technique where an attacker masquerades as a legitimate entity with which the victim might do business in order to prompt the user to reveal some confidential information (very frequently authentication credentials) that can later be used by an attacker.\n\nMitre T1598: Adversaries may send phishing messages to elicit sensitive information that can be used during targeting. Phishing for information is an attempt to trick targets into divulging information, frequently credentials or other actionable information.",
-                  "mitigation": "Schulung, Zero Trust, least privilege\n\nDamage: 8\nReproducibility: 2\nExploitability: 7\nAffected users: 5\nDREA: 22",
+                  "description": "Das Management bekommt von 2 Quellen sensitive Informationen über die Systeme. Dort kann ein Angreifer mittels Phishing versuchen an diese Informationen zu gelangen. Diese könnten sensitiv sein.\n\nCAPEC 98: Phishing is a social engineering technique where an attacker masquerades as a legitimate entity with which the victim might do business in order to prompt the user to reveal some confidential information (very frequently authentication credentials) that can later be used by an attacker.\n\nMitre T1598: Adversaries may send phishing messages to elicit sensitive information that can be used during targeting. Phishing for information is an attempt to trick targets into divulging information, frequently credentials or other actionable information.\n\nDamage: 8\nReproducibility: 2\nExploitability: 7\nAffected users: 5\nDREA: 22",
+                  "mitigation": "Schulung, Zero Trust, least privilege\n\nASVS 1.2.1 CWE 250: Verify the use of unique or special low-privilege OS accounts for all applications.\n\nDamage: 3\nReproducibility: 1\nExploitability: 2\nAffected users: 2\nDREA: 8",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 116,
-                  "score": "22"
+                  "score": "8"
                 }
               ]
             }
@@ -1495,8 +1495,8 @@
                 "text": "Mail-Server"
               },
               "body": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
                 "strokeDasharray": null
               }
             },
@@ -1510,7 +1510,7 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": true,
+              "hasOpenThreats": false,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
@@ -1519,15 +1519,15 @@
                 {
                   "id": "d038dc84-ce45-4bb0-9ccc-6980150a3bb5",
                   "title": "Keine Zustellbestätigung",
-                  "status": "Open",
-                  "severity": "Medium",
+                  "status": "Mitigated",
+                  "severity": "Low",
                   "type": "Repudiation",
-                  "description": "Ein Benutzer könnte behaupten, dass er eine wichtige E-Mail nicht erhalten hat, obwohl der Mail-Server die Nachricht zugestellt hat. Es gibt keine Zustellprotokolle oder Bestätigungen.\n\nCAPEC-571: An adversary prevents host-generated logs being delivered to a central location in an attempt to hide indicators of compromise.\n\nT1565: dversaries may insert, delete, or manipulate data in order to influence external outcomes or hide activity, thus threatening the integrity of the data.",
-                  "mitigation": "Zustellung loggen.\nzusätzliche addons für zustellbestätigungen verwenden\n\nDamage: 1\nReproducibility: 4\nExploitability: 1\nAffected users: 1\nDREA: 7",
+                  "description": "Ein Benutzer könnte behaupten, dass er eine wichtige E-Mail nicht erhalten hat, obwohl der Mail-Server die Nachricht zugestellt hat. Es gibt keine Zustellprotokolle oder Bestätigungen.\n\nCAPEC-571: An adversary prevents host-generated logs being delivered to a central location in an attempt to hide indicators of compromise.\n\nDamage: 1\nReproducibility: 6\nExploitability: 10\nAffected users: 1\nDREA: 18\n\nT1565: dversaries may insert, delete, or manipulate data in order to influence external outcomes or hide activity, thus threatening the integrity of the data.",
+                  "mitigation": "Zustellung loggen.\nzusätzliche addons für zustellbestätigungen verwenden\n\n(Keine Gegenmaßnahme gefunden)\n\nDamage: 1\nReproducibility: 1\nExploitability: 2\nAffected users: 1\nDREA: 5",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 129,
-                  "score": "7"
+                  "score": "5"
                 }
               ]
             }
@@ -1535,7 +1535,7 @@
           {
             "position": {
               "x": 762.5,
-              "y": -418
+              "y": -438
             },
             "size": {
               "width": 112.5,
@@ -1543,7 +1543,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Reports"
+                "text": "Reports\nverschlüsselt + signiert"
               }
             },
             "visible": true,
@@ -1552,7 +1552,7 @@
             "id": "ff093cfa-91e6-4346-929d-6c74b87883f7",
             "data": {
               "type": "tm.Text",
-              "name": "Reports",
+              "name": "Reports\nverschlüsselt + signiert",
               "hasOpenThreats": false
             }
           },
